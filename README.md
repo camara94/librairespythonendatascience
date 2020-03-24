@@ -56,7 +56,14 @@ donnez vos renseignements perso.
 	c.NotebookApp.password = u\'$key\'\\
 	c.NotebookApp.port = 8888" .jupyter/jupyter_notebook_config.py
 </pre>
-</code> et à partir de là, on est près on peut lancer le serveur maintenant avec cette commande:
-	<code>jupyter notebook --allow-root</code> et puis comme vous pouvez le voir dans la commande précédente 
-	le port **8888** il vous suffit tappez l'adresse **IP** ou **nom de domaine** lié à votre serveur
-	pour avoir accèss à votre **jupyter notebook** pour vos analyse de donnez
+</code> 
+*  et à partir de là, on est près on peut lancer le serveur maintenant avec cette commande:
+   <code>jupyter notebook --allow-root</code> et puis comme vous pouvez le voir dans la commande précédente 
+*  le port **8888** il vous suffit tappez l'adresse **IP** ou **nom de domaine** lié à votre serveur
+   pour avoir accèss à votre **jupyter notebook** pour vos analyse de donnez
+
+## Premiers Pas avec Python
+*   Pour commencer, on crée un fichier avec extension ipnb
+    ensuite on tape note commande pyhon
+*   pour créer un fichier disponible dans tous nos scripts, il faut créer un fichier d'extension **.py**
+	et puis créer nos **fonctions ou class** ensuite les importées et les utilisées 

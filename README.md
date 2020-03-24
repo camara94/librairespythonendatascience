@@ -14,7 +14,7 @@
 * et puis on télécharge anaconda dans son serveur avec la commande suivante:
 	<code>wget https://repo.continuum.io/archive/Anaconda3-5.0.1-Linux-x86_64.sh</code>
 	et ensuite on peut faire un <code>ls</code> pour voir si le fichier est bien telecharger
-* si tout on tappe encore la commande la <code>which pip</code> on devrait voir
+* si tout se passe bien, on tappe encore la commande la <code>which pip</code> on devrait voir
 	<code>~/anaconda3/bin/pip</code> et à partir de là anaconda est install dans le
 	serveur
 
@@ -42,7 +42,7 @@ ensuite <code>Entrée</code> jusqu'à ce que le certificat soit générer si vou
 donnez vos renseignements perso.
 
 ## Modifiez le fichier de configuration de Jupyter
-	pour cela, il faut renseigner les information de notre certificat on vient de générer avec 
+	pour cela, il faut renseigner les information de notre certificat qu'on vient de générer avec 
 	la commande suivante.
 <code>
 <pre>
@@ -57,6 +57,6 @@ donnez vos renseignements perso.
 	c.NotebookApp.port = 8888" .jupyter/jupyter_notebook_config.py
 </pre>
 </code> et à partir de là, on est près on peut lancer le serveur maintenant avec cette commande:
-	<code>jupyter notebook</code> et puis comme vous pouvez le dans la commande précédente 
+	<code>jupyter notebook --allow-root</code> et puis comme vous pouvez le voir dans la commande précédente 
 	le port **8888** il vous suffit tappez l'adresse **IP** ou **nom de domaine** lié à votre serveur
 	pour avoir accèss à votre **jupyter notebook** pour vos analyse de donnez

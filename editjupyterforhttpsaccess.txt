@@ -1,0 +1,15 @@
+export PATH=/root/anaconda3/bin:$PATH
+Writing default config to: /root/.jupyter/jupyter_notebook_config.py
+
+
+openssl req -x509 -nodes -days 365 -newkey rsa:1024 -keyout ~/.jupyter/key.key -out ~/.jupyter/cert.pem
+
+
+Generate key & cert into the jupyter configuration folder:
+
+openssl req -x509 -nodes -days 365 -newkey rsa:1024 -keyout ~/.jupyter/key.key -out ~/.jupyter/cert.pem
+ edit ~/.jupyter/jupyter_notebook_config.py and add:
+
+import os
+c.NotebookApp.keyfile = os.path.expanduser('~') + '/.jupyter/key.key'
+c.NotebookApp.certfile = os.path.expanduser('~') + '/.jupyter/cert.pem'
